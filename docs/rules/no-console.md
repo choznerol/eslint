@@ -81,7 +81,7 @@ However, you might not want to manually add `eslint-disable-next-line` or `eslin
         "no-restricted-syntax": [
             "error",
             {
-                "selector": "CallExpression[callee.object.name='console'][callee.property.name=/^(log|warn|error|info|trace)$/]",
+                "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
                 "message": "Unexpected property on console object was called"
             }
         ]
