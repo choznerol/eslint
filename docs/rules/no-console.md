@@ -78,6 +78,7 @@ However, you might not want to manually add `eslint-disable-next-line` or `eslin
 ```json
 {
     "rules": {
+        "no-console": "off",
         "no-restricted-syntax": [
             "error",
             {
